@@ -8,7 +8,10 @@ import { DishesService } from './dishes/dishes.service';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/saicathk'),
+    //for localhost mongodb
+    // MongooseModule.forRoot('mongodb://localhost/saicathk'),
+    //for mlab mongodb
+    MongooseModule.forRoot('mongodb://admin:admin123@ds139614.mlab.com:39614/saicathk'),
     MongooseModule.forFeature([
       {
         name: 'Dish',

@@ -12,12 +12,12 @@ export class HomePage {
 
   }
   ngOnInit(){
-    let dishId = '5c0e7fda378212075cf6c0e6';
+    let dishId = '5c1bb206a9ac9f3088b8749b';
     let dish = {
-      name: "dosa",
+      name: "idly",
       day: "all",
       quantity: 2,
-      price: 20,
+      price: 10,
       slot: ['breakfast','dinner']
     };
     this.dishes.getdishes().subscribe((res) => {
